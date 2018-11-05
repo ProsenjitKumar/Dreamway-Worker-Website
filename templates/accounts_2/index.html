@@ -1,0 +1,16 @@
+
+{% extends 'accounts_2/base_home.html' %}
+{% load static %}
+
+{% block head %}
+
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="{% static 'icon/icon.png' %}"/>
+
+{% endblock %}
+
+{% block body %}
+
+    <h1 style="background-color: #205ac1">Hello, {{ user.full_name }}</h1>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'accounts_2/base_home.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Charts</title>
+    <link rel="icon" type="image/png" href="{% static 'icon/icon.png' %}"/>
+
+{% endblock %}
+
+{% block body %}
+
+
+
+
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              All Worker Update Data</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Lead</th>
+                      <th>Date</th>
+                      <th>Balance</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Lead</th>
+                      <th>Date</th>
+                      <th>Balance</th>
+                    </tr>
+                  </tfoot>
+
+                  {% for user_history in users %}
+
+                       <tbody>
+
+                        <tr>
+                          <td>{{ user_history.full_name }}</td>
+                          <td>{{ user_history.lead }}</td>
+                          <td>{{ user_history.update }}</td>
+                          <td>{{ user_history.balance }}</td>
+
+                        </tr>
+
+                    <tbody>
+
+                    {% endfor %}
+
+
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted" style="background-color: #20c997">Updated {{ user.update }}</div>
+          </div>
+
+
+{% endblock %}

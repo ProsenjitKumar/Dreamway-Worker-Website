@@ -1,0 +1,24 @@
+{% extends 'accounts_2/base_home.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Personal Information</title>
+    <link rel="icon" type="image/png" href="{% static 'icon/icon.png' %}"/>
+{% endblock %}
+
+{% block body %}
+
+
+            <div style="background-color: #1c7430" class="card mb-3">
+                <div class="card-header">
+                    <h1 style="background-color: #1d7731"><p>{{ user.full_name }}</p></h1>
+                     <p>Email: {{ user.email }} </p>
+                     <p>Age: {{ user.age }} </p>
+                    <p>Address: {{ user.address}}</p>
+                     <h3><p>Your account has been updated: {{ user.update }}</p></h3>
+                </div>
+            </div>
+
+
+
+{% endblock %}

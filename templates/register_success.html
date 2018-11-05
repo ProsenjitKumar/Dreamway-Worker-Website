@@ -1,0 +1,21 @@
+{% extends 'accounts_1/base_home_accounts_1.html' %}
+
+{% block head %}
+    <title>Success Registration</title>
+{% endblock %}
+
+{% block body %}
+
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Dreamway Registration Success</h1><br>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5" style="background-color: #6f42c1">Your registration has been created successfully.
+              Please wait for Admin Approval</h2>
+          <a href="{% url 'contact' %}" class="btn btn-primary js-scroll-trigger">Contact Us</a>
+        </div>
+      </div>
+
+    </header>
+
+{% endblock %}

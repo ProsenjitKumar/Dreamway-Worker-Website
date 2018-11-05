@@ -1,0 +1,38 @@
+{% extends 'accounts_1/base_home_accounts_1.html' %}
+{% load static %}
+
+{% block head %}
+<title>About Dreamway</title>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Contact Us</h1><br>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">We are always here to support you.
+              always feel free to contact us and ask any question you have.We will be happy to answer you.<br>
+              Khulna Branch : +8801813944782, +8801641924295<br>
+              Khalishpur Branch : +8801907661404, +8801717965497<br>
+              Bagerhat Branch : +8801924166997, +8801927801051 </h2>
+          <a href="{% url 'home' %}" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        </div>
+      </div>
+
+    </header>
+
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Dreamway IT Institute & Software Firm
+      </div>
+        <div class="container">
+        Copyright &copy; Your Website 2018<br>
+            All rights reserved | Developed by <a href="https://www.facebook.com/prosenjit1994" target="_blank">Prosenjit</a> from Dreamway
+      </div>
+    </footer>
+
+{% endblock %}
